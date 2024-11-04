@@ -1,0 +1,287 @@
+/*Css commun à toutes les pages du site*/
+
+body{
+    width: 1500px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/background_livre.jpg");
+}
+
+header, section, div, main, footer{
+    background-color: beige;
+}
+/*css de l'en-tête du site*/
+header{
+    color: rgb(110, 16, 242);
+    display: flex;
+    height: 100px;
+    text-align: center;
+}
+
+header h1{
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+label{
+    display: block;
+    font: 10px'Fira Sans',sans-serif;
+  }
+  
+  input,
+  label {
+    margin: 10px 0;
+  }
+  
+
+/* css de la page centrale du site*/
+#main{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+/* css du menu du site*/
+#menu{
+    height: 50px;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu_deroulant{
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu_deroulant li {
+    list-style-type: none ;       /* Suppression des puces */
+  
+}
+.menu_deroulant a {
+    display:block;                /* Transformation en block */
+    min-width: 170px;             /* Largeur minimale des liens */   
+    margin: 8px;               /* Marges externes */
+    padding: 6px 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color:rgb(110, 16, 242);  /* Arrière-plan */ 
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu_deroulant a.actif {    
+    background-color: #000 ; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu_deroulant a:hover,
+.menu_deroulant a:hover.actif{
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+
+footer{
+    display: flex;  
+    /*margin-top: 30px;*/
+}
+
+footer p{
+    margin: 10px 0 10px 10px;
+}
+
+/* margin: haut, droite, bas, gauche*/
+footer a{
+    margin: auto 10px auto auto;
+}
+
+/*Création de triangle pour naviguer entre les images*/
+.triangle_gauche{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 12px solid transparent;
+    border-right : 20px solid black;
+    border-bottom : 8px solid transparent;
+    margin-bottom: 90px;
+    margin-right: 20px;
+}
+
+.triangle_droite{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 8px solid transparent;
+    border-bottom : 12px solid transparent;
+    border-left : 20px solid black;
+    margin-bottom: 88px;
+    margin-left: 10px;
+}
+
+
+/*Css de la page d'accueil*/
+
+/* Bloc affichage central du site contenant les images et les liens vers les différentes
+parties du site*/
+
+#bloc_affichage_page_accueil{
+    width: 1000px;
+    margin:auto auto auto auto;
+    text-align: center;
+    
+}
+
+h2{
+    color:rgb(110, 16, 242);
+}
+/* permet de disposer mes blocs en 2 lignes de 3 blocs 
+tout en centrant l'image, le texte et le lien vers la page correspondante*/
+#dispo_bloc_accueil{
+    margin-top: -10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+#dispo_bloc_accueil div{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+
+.image_accueil{
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/*Css page manga*/
+
+.bloc_affichage_accueil{
+
+    text-align: center;
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+input, label{
+    margin: 8px 0;
+}
+
+.bloc_expo_theme
+{
+    margin: auto auto 20px auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc_expo_theme p
+{
+    text-align: justify;
+}
+
+.dispo_bloc_theme{
+   margin: auto;
+   margin-bottom: 20px;
+
+}
+
+.description_objet_theme{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.liens_recherches a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/*Css page d'un manga*/
+
+.bloc_manga
+{
+    width: 1100px;
+    padding: 10px;
+}
+
+.bloc_manga h1
+{
+    font-size: 35px;
+    color:rgb(110, 16, 242)
+}
+
+.bloc_liste_numero
+{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.bloc_liste_numero li
+{
+    list-style-type: none;
+}
+
+.bloc_liste_numero a
+{
+    text-decoration: none;
+}
+
+.ingredient{
+    list-style: none;
+    text-align: left;
+}
+
+.preparation
+{
+    text-align: left;
+}
+.preparation li
+{
+    margin-bottom: 10px;
+}
+
+.liste_page_recherche{
+    list-style: none;
+    text-align: left;
+    margin-left: -40px;
+}
+
+.recherche_tag{
+    width: 200px;
+    margin: 0 50px 15px 0;
+    padding: 0 10px 0 10px;
+}
+
+.recherche_tag p,ul,li
+{
+    text-align: left;
+}
+
+.recherche_tag li
+{
+    margin-bottom: 10px;
+}
