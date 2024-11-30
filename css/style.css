@@ -107,30 +107,6 @@ footer a{
     margin: auto 10px auto auto;
 }
 
-/*Création de triangle pour naviguer entre les images*/
-.triangle_gauche{
-    display : inline-block;
-    height : 0;
-    width : 0;
-    border-top : 12px solid transparent;
-    border-right : 20px solid black;
-    border-bottom : 8px solid transparent;
-    margin-bottom: 90px;
-    margin-right: 20px;
-}
-
-.triangle_droite{
-    display : inline-block;
-    height : 0;
-    width : 0;
-    border-top : 8px solid transparent;
-    border-bottom : 12px solid transparent;
-    border-left : 20px solid black;
-    margin-bottom: 88px;
-    margin-left: 10px;
-}
-
-
 /*Css de la page d'accueil*/
 
 /* Bloc affichage central du site contenant les images et les liens vers les différentes
@@ -140,7 +116,6 @@ parties du site*/
     width: 1000px;
     margin:auto auto auto auto;
     text-align: center;
-    
 }
 
 h2{
@@ -157,7 +132,7 @@ tout en centrant l'image, le texte et le lien vers la page correspondante*/
 
 #dispo_bloc_accueil div{
     width: 300px;
-    height: 400px;
+    height: 450px;
     margin: auto;
 }
 
@@ -172,6 +147,10 @@ a:hover{
     text-decoration: none;
 }
 
+a
+{
+    text-decoration: none;
+}
 
 /*Css page manga*/
 
@@ -208,17 +187,48 @@ input, label{
 
 }
 
+.dispo_bloc_theme img
+{
+    margin-bottom: 20px;
+}
+
 .description_objet_theme{
     width: 300px;
     height: 400px;
     margin: auto;
 }
 
+.liens_recherches{
+    margin-top: -20px;
+}
+
 .liens_recherches a{
+    min-width: 170px;             /* Largeur minimale des liens */   
+    margin: 8px;               /* Marges externes */
+    padding: 6px;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color:rgb(242, 16, 155);  /* Arrière-plan */ 
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    color:white;
     margin-left: 20px;
     text-decoration: none;
 }
 
+.link_style{
+         /* Largeur minimale des liens */   
+    margin: 8px;               /* Marges externes */
+    padding: 6px;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color:rgb(110, 16, 242);  /* Arrière-plan */ 
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    color:white;
+    margin-left: 20px;
+    text-decoration: none;
+}
 /*Css page d'un manga*/
 
 .bloc_manga
@@ -247,6 +257,15 @@ input, label{
 
 .bloc_liste_numero a
 {
+    min-width: 170px;             /* Largeur minimale des liens */   
+    margin: 8px;               /* Marges externes */
+    padding: 0 6px 0 6px;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color:rgb(110, 16, 242);  /* Arrière-plan */ 
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 15px;           /* Arrondis des bordures */
+    color:white;
     text-decoration: none;
 }
 
@@ -278,10 +297,19 @@ input, label{
 
 .recherche_tag p,ul,li
 {
-    text-align: left;
+    text-align: center;
 }
 
 .recherche_tag li
 {
+    min-width: 170px;             /* Largeur minimale des liens */   
+    margin: 8px;               /* Marges externes */
+    padding: 0 6px 0 6px;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color:rgb(110, 16, 242);  /* Arrière-plan */ 
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 8px;           /* Arrondis des bordures */
+    color:white;
     margin-bottom: 10px;
 }
