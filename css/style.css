@@ -284,7 +284,7 @@ input, label{
 }
 
 .liste_page_recherche{
-    list-style: none;
+    list-style-type: none;
     text-align: left;
     margin-left: -40px;
 }
@@ -312,4 +312,5 @@ input, label{
     border-radius: 8px;           /* Arrondis des bordures */
     color:white;
     margin-bottom: 10px;
+    list-style-type: none;
 }
